@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: go-skeleton
+    environment:
+      - APP_ENV=dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    volumes:
+      - "./:/etc/go-skeleton"
+    ports:
+      - 8080:8080
+    networks:
+      - goskel-service-network
+
+networks:
+  goskel-service-network:

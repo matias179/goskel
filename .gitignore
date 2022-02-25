@@ -1,0 +1,17 @@
+# terraform
+.terraform/
+*.tfplan
+*.tfstate
+*.hcl
+
+# IDEs, Editors
+.idea/
+.vscode
+.run
+
+# misc
+.DS_Store
+go-skeleton.iml
+
+# Air
+tmp/
